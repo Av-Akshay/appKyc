@@ -1,4 +1,6 @@
 import React from "react";
+import Quality from "./mission-components/Quality";
+import { companyQuality } from "../../constant/ConstantInfo";
 
 const Mission = () => {
   return (
@@ -14,6 +16,11 @@ const Mission = () => {
           thriving community, fostering a culture of connectivity and innovation
           that leaves a lasting impact on the world we live in.
         </p>
+      </div>
+      <div className="flex items-center justify-between w-11/12 m-auto my-10">
+        {companyQuality?.map((item) => {
+          return <Quality content={item.pera} heading={item.heading} />;
+        })}
       </div>
     </section>
   );
