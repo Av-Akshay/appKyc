@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kyc_logo {
+  animation: Bounce 5s linear infinite;
+}
+@keyframes Bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+}
+
+.about_animation {
+  position: relative;
+  width: fit-content;
+  animation: motion 1s linear infinite;
+}
+.about_animation::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+}
+@keyframes motion {
+  0%,
+  100% {
+    right: -5px;
+  }
+}
