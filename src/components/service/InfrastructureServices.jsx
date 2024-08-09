@@ -1,6 +1,6 @@
 import React from "react";
 import { serviceProvidedCards } from "../../utils/constants";
-import { Card } from "../index";
+import Card from "./Card";
 
 const InfrastructureServices = () => {
   return (
