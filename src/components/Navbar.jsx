@@ -52,7 +52,7 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? "text-light" : "text-black"
             }
-            to={"/Signup"}
+            to={"/sign-up"}
           >
             Signup
           </NavLink>

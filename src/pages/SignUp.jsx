@@ -1,6 +1,6 @@
 import React from "react";
-import Input from "../utiles/Input.jsx";
-import Button from "../utiles/Button.jsx";
+import Input from "../components/Input.jsx";
+import Button from "../components/Button.jsx";
 
 const SignUp = () => {
   return (

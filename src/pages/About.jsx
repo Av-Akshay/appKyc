@@ -1,6 +1,6 @@
 import React from "react";
 import kycLogo from "../assets/Images/kycLogo.png";
-import { Cart, Mission } from "../components";
+import { Mission } from "../components";
 
 const About = () => {
   return (
@@ -38,9 +38,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <section className="w-full py-10 ">
-        <Cart />
-      </section> */}
       <Mission />
     </div>
   );

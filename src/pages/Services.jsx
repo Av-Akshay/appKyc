@@ -1,10 +1,7 @@
 import React from "react";
 
-import {
-  InfrastructureServices,
-  ServicesOffer,
-  serviceBanner,
-} from "../components";
+import { InfrastructureServices, ServicesOffer } from "../components";
+import { serviceBanner } from "../utils/icons";
 
 const Services = () => {
   const style = {

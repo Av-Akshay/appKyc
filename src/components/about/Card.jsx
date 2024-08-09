@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cart = ({ className, image, text, heading }) => {
+const Card = ({ className, image, text, heading }) => {
   return (
     <div
       className={`w-4/5 m-auto flex items-center justify-between ${className} `}
@@ -18,4 +18,4 @@ const Cart = ({ className, image, text, heading }) => {
   );
 };
 
-export default Cart;
+export default Card;

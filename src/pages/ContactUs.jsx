@@ -1,7 +1,7 @@
 import React from "react";
 
-import Input from "../utiles/Input";
-import Button from "../utiles/Button";
+import Input from "../components/Input";
+import Button from "../components/Button";
 
 const ContactUs = () => {
   return (

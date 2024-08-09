@@ -1,6 +1,6 @@
 import React from "react";
-import Quality from "./mission-components/Quality";
-import { companyQuality } from "../../constant/ConstantInfo";
+import { Quality } from "../index";
+import { companyQuality } from "../../utils/constants";
 
 const Mission = () => {
   return (
