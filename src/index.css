@@ -21,18 +21,39 @@
 .about_animation {
   position: relative;
   width: fit-content;
-  animation: motion 1s linear infinite;
 }
 .about_animation::after {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  background-color: blue;
+  right: -5%;
+  background-color: white;
+  animation: motion 3s linear infinite;
 }
 @keyframes motion {
   0%,
   100% {
-    right: -5px;
+    right: 0%;
   }
+  50% {
+    right: -110%;
+  }
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: " ";
+  position: absolute;
+  height: 0.15rem;
+  width: 0;
+  top: 100%;
+  left: 0;
+  transition: all 0.3s linear;
+  background-color: #957f56;
+}
+.underline:hover::after {
+  width: 100%;
 }
