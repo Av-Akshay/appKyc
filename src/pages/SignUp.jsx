@@ -14,17 +14,21 @@ const SignUp = () => {
             label={"Enter Your name:-"}
             type={"text"}
             placeholder={"Name"}
-            className={"capitalize"}
+            className={
+              "capitalize border-b-2 border-black rounded-lg bg-transparent"
+            }
           />
           <Input
             label={"Enter Your Email:-"}
             type={"email"}
             placeholder={"Email"}
+            className={"border-b-2 border-black rounded-lg bg-transparent"}
           />
           <Input
             label={"Enter Your Password:-"}
             type={"Password"}
             placeholder={"Password"}
+            className={"border-b-2 border-black rounded-lg bg-transparent"}
           />
           <Button
             type="submit"

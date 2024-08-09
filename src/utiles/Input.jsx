@@ -9,7 +9,7 @@ const Input = ({ label, className, placeholder, type, ...props }) => {
         ""
       )}
       <input
-        className={`w-full px-5 py-2 outline-none border-b-2 border-black bg-transparent rounded-lg font-serif ${className}`}
+        className={`w-full px-5 py-2 outline-none font-serif ${className}`}
         type={type}
         placeholder={placeholder}
       />

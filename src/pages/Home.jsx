@@ -1,6 +1,5 @@
 import React from "react";
-import SectionFirst from "../components/home-components/SectionFirst";
-import SectionSecond from "../components/home-components/SectionSecond";
+import { SectionFirst, SectionSecond } from "../components";
 
 const Home = () => {
   return (
