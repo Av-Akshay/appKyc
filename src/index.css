@@ -29,7 +29,7 @@
   width: 100%;
   right: -5%;
   background-color: white;
-  animation: motion 3s linear infinite;
+  animation: motion 5s linear infinite;
 }
 @keyframes motion {
   0%,
