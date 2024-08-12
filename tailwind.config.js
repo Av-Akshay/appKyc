@@ -9,7 +9,8 @@ export default {
       },
       animation: {
         downToUp: "downToUp 0.5s linear",
-        rightSlider: "rightSlider 0.5s linear",
+        rightSlider: "rightSlider 0.8s linear",
+        leftSlider: "leftSlider 0.8s linear",
       },
       keyframes: {
         downToUp: {
@@ -25,7 +26,17 @@ export default {
         rightSlider: {
           "0%": {
             transform: "translateX(-25%)",
-            opacity: 0.5,
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: 1,
+          },
+        },
+        leftSlider: {
+          "0%": {
+            transform: "translateX(25%)",
+            opacity: 0,
           },
           "100%": {
             transform: "translateX(0%)",

@@ -2,8 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-// import { About, ContactUs, Services, SignUp } from "./pages";
 import { Loader } from "./components";
+import Footer from "./components/Footer.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
@@ -58,6 +58,7 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
       </Router>
     </React.Fragment>
   );

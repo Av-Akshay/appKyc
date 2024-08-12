@@ -6,6 +6,8 @@ import InfrastructureServices from "./service/InfrastructureServices";
 import SectionFirst from "./home/SectionFirst";
 import SectionSecond from "./home/SectionSecond";
 import Quality from "./about/Quality";
+import ContactForm from "./contact/ContactForm";
+import CompanyContact from "./contact/CompanyContact";
 
 export {
   Loader,
@@ -16,4 +18,6 @@ export {
   ServicesOffer,
   InfrastructureServices,
   Quality,
+  ContactForm,
+  CompanyContact,
 };
