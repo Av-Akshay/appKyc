@@ -4,7 +4,7 @@ import Button from "../components/Button.jsx";
 
 const SignUp = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-light py-5 ">
+    <div className="w-full min-h-[90vh] flex flex-col items-center justify-center bg-light py-5 ">
       <h1 className="text-4xl font-bold text-white mt-10 font-serif ">
         Signup Page{" "}
       </h1>
