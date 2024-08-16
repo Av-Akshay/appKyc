@@ -3,6 +3,7 @@ import serviceBanner from "../assets/Images/service.jpg";
 import discoverImage from "../assets/Images/discover.webp";
 import optimizeImage from "../assets/Images/optimize.webp";
 import implementImage from "../assets/Images/implement.webp";
+import technologiesBackground from "../assets/Images/technologies.jfif";
 
 export {
   serviceBanner,
@@ -10,4 +11,5 @@ export {
   designImage,
   implementImage,
   optimizeImage,
+  technologiesBackground,
 };

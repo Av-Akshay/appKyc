@@ -2,6 +2,7 @@ import React from "react";
 
 import { InfrastructureServices, ServicesOffer } from "../components";
 import { serviceBanner } from "../utils/icons";
+import Technologies from "../components/service/Technologies";
 
 const Services = () => {
   const style = {
@@ -27,6 +28,7 @@ const Services = () => {
         </h1>
       </div>
       <ServicesOffer />
+      <Technologies />
       <InfrastructureServices />
     </div>
   );
