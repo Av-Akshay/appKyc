@@ -1,6 +1,9 @@
 import React from "react";
 
-const Input = ({ label, className, placeholder, type, ...props }) => {
+const Input = React.forwardRef(function Input(
+  { label, className, placeholder, type, ...props },
+  ref
+) {
   return (
     <div>
       {label ? (
@@ -12,9 +15,11 @@ const Input = ({ label, className, placeholder, type, ...props }) => {
         className={`w-full px-5 py-2 outline-none font-serif ${className}`}
         type={type}
         placeholder={placeholder}
+        ref={ref}
+        {...props}
       />
     </div>
   );
-};
+});
 
 export default Input;
