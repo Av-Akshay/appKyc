@@ -6,6 +6,7 @@ export default {
       colors: {
         dark: "#453d32",
         light: "#957f56",
+        lighter: "#faeecd",
       },
       animation: {
         downToUp: "downToUp 0.5s linear",

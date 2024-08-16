@@ -3,10 +3,10 @@ import Input from "../Input";
 import Button from "../Button";
 import useContact from "../../hooks/useContact";
 
-const ContactForm = () => {
+const ContactForm = ({ className }) => {
   const { register, handleSubmit, errors, handelSubmitForm } = useContact();
   return (
-    <div className="w-1/2 flex items-center justify-center animate-leftSlider">
+    <div className={` flex items-center justify-center ${className}`}>
       <form
         onSubmit={handleSubmit(handelSubmitForm)}
         className=" w-4/5 flex flex-col gap-5"
@@ -57,7 +57,7 @@ const ContactForm = () => {
         <Button
           text={"submit"}
           type={"submit"}
-          className={"border-2 p-2 bg-[#d6bd8b]  border-dark text-dark"}
+          className={"border-2 p-2 bg-[#d6bd8b]  border-dark text-dark w-full"}
         />
       </form>
     </div>

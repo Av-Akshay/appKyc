@@ -13,6 +13,8 @@ const useContact = () => {
       data.subject
     )}&body=${encodeURIComponent(data.message)}`;
     window.location.href = mailtoLink;
+
+    reset();
   };
   return {
     handleSubmit,
