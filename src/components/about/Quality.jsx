@@ -1,12 +1,29 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 import { HiOutlineLightBulb } from "react-icons/hi";
 
-const Quality = ({ content, heading }) => {
+const Quality = ({ item, index }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      offset: 200,
+    });
+  });
+
   return (
-    <div className="w-[28%] h-[25rem] p-10 flex flex-col items-center text-white font-serif cursor-pointer z-20 justify-center gap-5 border-2 border-light  relative after:content-[' '] after:w-full after:absolute after:z-[-10] after:h-full after:top-0 after:left-0 after:bg-light hover:after:-top-8 hover:after:left-8 after:transition-all ">
-      <HiOutlineLightBulb className="border-2 rounded-md border-white text-center text-5xl p-2 z-10" />
-      <h1 className="text-2xl font-semibold ">{heading}</h1>
-      <p className="text-center font-medium text-lg">{content}</p>
+    <div
+      data-aos="flip-left"
+      className={`flex items-center justify-center ${
+        item.id === 1 ? "flex-row-reverse " : " "
+      }w-full p-5 border border-dark rounded-2xl`}
+    >
+      <div className="w-3/5 flex flex-col justify-center gap-5">
+        <h2 className="text-xl font-semibold"> {item.heading}</h2>
+        <p>{item.content}</p>
+      </div>
+      <div className="w-2/5 flex items-center justify-center ">
+        <img className="h-64 w-64 rounded-2xl" src={item.image_url} alt="" />
+      </div>
     </div>
   );
 };

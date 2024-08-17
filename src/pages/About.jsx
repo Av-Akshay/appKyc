@@ -1,4 +1,5 @@
 import React from "react";
+
 import kycLogo from "../assets/Images/kycLogo.png";
 import { Mission, ContactForm } from "../components";
 
@@ -39,13 +40,15 @@ const About = () => {
         </div>
       </section>
       <Mission />
-      <div className="py-5 bg-lighter">
+      <div className="py-10 bg-lighter flex flex-col items-center justify-center overflow-hidden my-10">
         <div className="text-center">
-          <h1 className=" relative capitalize text-4xl font-semibold inline-block my-5 font-serif text-dark after:transition-all after:hover:w-full after:content-[' '] after:absolute after:w-0 after:h-[0.15rem] after:left-0 after:bg-light after:top-full ">
+          <h1 className=" relative capitalize text-4xl font-semibold inline-block mb-10 font-serif text-dark after:transition-all after:hover:w-full after:content-[' '] after:absolute after:w-0 after:h-[0.15rem] after:left-0 after:bg-light after:top-full ">
             Contact us
           </h1>
         </div>
-        <ContactForm />
+        <ContactForm
+          className={"w-3/5 justify-center text-center items-center"}
+        />
       </div>
     </div>
   );

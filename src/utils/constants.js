@@ -1,15 +1,27 @@
 const companyQuality = [
   {
-    heading: "Connect",
-    pera: "Establish meaningful connections by providing seamless connectivity solutions to our customers for inclusive communication services.",
+    id: 0,
+    heading: "Expanding Our Service Portfolio",
+    image_url:
+      "https://assets.entrepreneur.com/content/3x2/2000/20151014054104-shutterstock-229901350.jpeg?format=pjeg&auto=webp&crop=1:1 ",
+    content:
+      "Strengthening our capabilities in both app and web development, ensuring we can deliver comprehensive digital solutions to our clients.",
   },
   {
-    heading: "Innovate",
-    pera: "Explore and implement innovative communication solutions that enhance the way people connect and communicate.",
+    id: 1,
+    heading: "Innovating and Launching",
+    image_url:
+      "https://www.potential.com/wp-content/uploads/2022/12/Blog-Innovation.png",
+    content:
+      " Introducing our very own mobile application, designed to set new standards in the industry.",
   },
   {
-    heading: "Collaborate",
-    pera: "Foster collaboration internally and externally to enhance the efficiency and effectiveness of our telecommunications services.",
+    id: 2,
+    heading: "Becoming a Trusted Partner",
+    image_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZeaHTrofZUqPsOwAvTa9ZL6vYTFFqWijifw&s",
+    content:
+      "Establishing long-term relationships with our clients by consistently delivering excellence and driving their digital success.",
   },
 ];
 
