@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+
 import { IoLocation } from "react-icons/io5";
 import { MdMarkEmailUnread, MdAddIcCall } from "react-icons/md";
 
 const CompanyContact = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      offset: 200,
+    });
+  });
+
   return (
-    <div className="w-1/2 flex items-center justify-center font-serif font-medium animate-rightSlider">
+    <div
+      data-aos="fade-right"
+      className="w-[48%] flex items-center justify-center font-serif font-medium "
+    >
       <div className="flex flex-col gap-10 justify-center">
         <div className=" flex items-center gap-8">
           <div className=" text-xl">

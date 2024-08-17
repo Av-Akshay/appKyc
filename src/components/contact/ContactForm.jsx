@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+
 import Input from "../Input";
 import Button from "../Button";
 import useContact from "../../hooks/useContact";
 
 const ContactForm = ({ className }) => {
   const { register, handleSubmit, errors, handelSubmitForm } = useContact();
+
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      offset: 200,
+    });
+  });
   return (
-    <div className={` flex items-center justify-center ${className}`}>
+    <div
+      data-aos="fade-left"
+      className={` flex items-center justify-center ${className}`}
+    >
       <form
         onSubmit={handleSubmit(handelSubmitForm)}
         className=" w-4/5 flex flex-col gap-5"
