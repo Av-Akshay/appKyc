@@ -1,5 +1,10 @@
 import React from "react";
-import { DetailSection, HeroSection, ServiceSection } from "../components";
+import {
+  ContactSection,
+  DetailSection,
+  HeroSection,
+  ServiceSection,
+} from "../components";
 
 const Home = () => {
   return (
@@ -7,6 +12,7 @@ const Home = () => {
       <HeroSection />
       <ServiceSection />
       <DetailSection />
+      <ContactSection />
     </React.Fragment>
   );
 };

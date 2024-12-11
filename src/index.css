@@ -9,19 +9,19 @@
   }
   @font-face {
     font-family: "poppinsBold";
-    src: url("./assets/font-family/Poppins-Bold.ttf") format("truetype");
+    src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
   }
   @font-face {
     font-family: "poppinsMedium";
-    src: url("./assets/font-family/Poppins-Medium.ttf") format("truetype");
+    src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
   }
   @font-face {
     font-family: "poppinsRegular";
-    src: url("./assets/font-family/Poppins-Regular.ttf") format("truetype");
+    src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
   }
   @font-face {
     font-family: "poppinsExtraLight";
-    src: url("./assets/font-family/ExtraLight.ttf") format("truetype");
+    src: url("./assets/fonts/ExtraLight.ttf") format("truetype");
   }
 }
 
