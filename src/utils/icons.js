@@ -11,6 +11,10 @@ import webDevelopment from "/images/web-development.svg";
 import write from "/images/write.svg";
 
 import appDevelopment from "/images/app-development.svg";
+import first from "/images/first.svg";
+import second from "/images/second.svg";
+import third from "/images/third.svg";
+import fourth from "/images/fourth.svg";
 
 export {
   logo,
@@ -25,4 +29,8 @@ export {
   webDevelopment,
   write,
   appDevelopment,
+  first,
+  fourth,
+  second,
+  third,
 };

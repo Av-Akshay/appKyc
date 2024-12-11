@@ -8,8 +8,12 @@ export default {
         light: "#957f56",
         lighter: "#fae4c8",
         "section-background": "#1F2732",
-        "secondary-background": "#C4C4C4",
+        "secondary-background": "#504F4F",
         them: "#F57842",
+        yellowColor: "#FF9900",
+        pinkColor: "#FF00E5",
+        blueColor: "#00FFF0",
+        greenColor: "#00FF57",
       },
       animation: {
         downToUp: "downToUp 0.5s linear",

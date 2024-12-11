@@ -2,11 +2,14 @@ import React from "react";
 
 const ServiceCard = ({ title, text, pic }) => {
   return (
-    <div className="flex flex-col items-center gap-5">
+    <div className="flex flex-col items-center justify-start gap-5 w-4/5 m-auto">
       <img src={pic} alt={title} />
       <div className="flex items-center flex-col gap-5">
-        <h1 className="text-[#000000] font-poppinsRegular"> {title} </h1>
-        <p className="font-poppinsExtraLight text-[#000000] text-center">
+        <h1 className="text-[#000000] font-poppinsSemibold text-2xl">
+          {" "}
+          {title}{" "}
+        </h1>
+        <p className="font-poppinsExtraLight text-[#000000] text-center text-sm">
           {" "}
           {text}{" "}
         </p>
