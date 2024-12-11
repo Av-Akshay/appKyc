@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "poppinsSemibold";
+    src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "poppinsBold";
+    src: url("./assets/font-family/Poppins-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "poppinsMedium";
+    src: url("./assets/font-family/Poppins-Medium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "poppinsRegular";
+    src: url("./assets/font-family/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "poppinsExtraLight";
+    src: url("./assets/font-family/ExtraLight.ttf") format("truetype");
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 5px gray;
+  }
+  .text-shadow-md {
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-lg {
+    text-shadow: -6px -8px 5px rgba(0, 0, 0, 0.7);
+  }
+  .clip-circle {
+    clip-path: circle(50%);
+  }
+  .clip-polygon {
+    clip-path: polygon(100% 0, 100% 80%, 49% 99%, 0 80%, 0 0);
+  }
+  .clip-ellipse {
+    clip-path: ellipse(50% 30% at 50% 50%);
+  }
+}
 .kyc_logo {
   animation: Bounce 5s linear infinite;
 }

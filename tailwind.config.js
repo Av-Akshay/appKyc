@@ -7,6 +7,9 @@ export default {
         dark: "#453d32",
         light: "#957f56",
         lighter: "#fae4c8",
+        "section-background": "#1F2732",
+        "secondary-background": "#C4C4C4",
+        them: "#F57842",
       },
       animation: {
         downToUp: "downToUp 0.5s linear",
@@ -45,7 +48,14 @@ export default {
           },
         },
       },
+      fontFamily: {
+        poppinsSemibold: ["poppinsSemibold"],
+        poppinsBold: ["poppinsBold"],
+        poppinsMedium: ["poppinsMedium"],
+        poppinsExtraLight: ["poppinsExtraLight"],
+        poppinsRegular: ["poppinsRegular"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui", "tailwindcss-textshadow", "tailwind-clip-path")],
 };

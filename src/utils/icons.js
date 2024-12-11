@@ -1,15 +1,28 @@
-import designImage from "../assets/Images/design.webp";
-import serviceBanner from "../assets/Images/service.jpg";
-import discoverImage from "../assets/Images/discover.webp";
-import optimizeImage from "../assets/Images/optimize.webp";
-import implementImage from "../assets/Images/implement.webp";
-import technologiesBackground from "../assets/Images/technologies.jfif";
+import logo from "/images/logo.svg";
+import call from "/images/call.svg";
+import design from "/images/design.svg";
+import develop from "/images/develop.svg";
+import heroSection from "/images/hero-section.svg";
+import mouse from "/images/mouse.svg";
+import strategy from "/images/strategy.svg";
+import support from "/images/support.svg";
+import uiUx from "/images/uiux.svg";
+import webDevelopment from "/images/web-development.svg";
+import write from "/images/write.svg";
+
+import appDevelopment from "/images/app-development.svg";
 
 export {
-  serviceBanner,
-  discoverImage,
-  designImage,
-  implementImage,
-  optimizeImage,
-  technologiesBackground,
+  logo,
+  call,
+  design,
+  develop,
+  heroSection,
+  mouse,
+  strategy,
+  support,
+  uiUx,
+  webDevelopment,
+  write,
+  appDevelopment,
 };
