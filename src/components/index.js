@@ -4,4 +4,14 @@ import ServiceSection from "./home/ServiceSection";
 import DetailSection from "./home/DetailSection";
 import ContactSection from "./home/ContactSection";
 
-export { HeroSection, Loader, ServiceSection, DetailSection, ContactSection };
+// --------------------------contact page--------------------
+import ContactForm from "./contact/ContactForm";
+
+export {
+  HeroSection,
+  Loader,
+  ServiceSection,
+  DetailSection,
+  ContactSection,
+  ContactForm,
+};

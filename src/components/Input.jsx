@@ -5,9 +5,11 @@ const Input = React.forwardRef(function Input(
   ref
 ) {
   return (
-    <div>
+    <div className="w-full">
       {label ? (
-        <label className="font-medium text-xl font-serif">{label}</label>
+        <label className="text-white font-poppinsMedium uppercase ">
+          {label}
+        </label>
       ) : (
         ""
       )}

@@ -7,7 +7,7 @@ import Footer from "./components/Footer.jsx";
 
 const Home = lazy(() => import("./pages/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));
-const ContactUs = lazy(() => import("./pages/ContactUs.jsx"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const SignUp = lazy(() => import("./pages/SignUp.jsx"));
 
@@ -37,7 +37,7 @@ function App() {
             path="/contact"
             element={
               <Suspense fallback={<Loader />}>
-                <ContactUs />
+                <Contact />
               </Suspense>
             }
           />

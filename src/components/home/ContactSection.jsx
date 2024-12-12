@@ -12,11 +12,13 @@ const ContactSection = () => {
       </h1>
       <div className="flex items-center justify-center gap-10 mt-10">
         <ContactCard
+          className={"w-[26%] rounded-3xl h-[20rem]"}
           pic={call}
           title="Call Us"
           text=" Contact Number :- (+91) 1234567890 "
         />
         <ContactCard
+          className={"w-[26%] rounded-3xl h-[20rem]"}
           pic={write}
           title="Write Us"
           text=" Email:- user@gmail.com "

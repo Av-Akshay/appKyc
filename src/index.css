@@ -44,6 +44,9 @@
   .clip-ellipse {
     clip-path: ellipse(50% 30% at 50% 50%);
   }
+  .clip-secondPolygon {
+    clip-path: polygon(50% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  }
 }
 .kyc_logo {
   animation: Bounce 5s linear infinite;
