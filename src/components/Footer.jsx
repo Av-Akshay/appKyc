@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { redCircle } from "../utils/icons";
+
 const Footer = () => {
   const [year, setYear] = useState("");
   const handelGetYear = () => {
@@ -15,7 +17,18 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="bg-slate-950 py-5 text-white font-serif text-base ">
+    <div
+      style={{
+        clipPath: "polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%)",
+      }}
+      className="relative bg-section-background py-5 text-white font-serif text-base pt-20 "
+    >
+      <img
+        className="absolute top-1 left-1/2 -translate-x-1/2 w-14 h-14"
+        src={redCircle}
+        alt=""
+      />
+      z
       <div className="w-11/12 m-auto flex items-baseline justify-between mb-5">
         <div className="flex flex-col gap-5">
           <h1 className="text-xl"> Address:- </h1>
