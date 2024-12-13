@@ -23,6 +23,14 @@ import write_us from "/images/write_us.svg";
 import icon_phone_call from "/images/icon_phone_call.svg";
 import icon_write_us from "/images/icon_write_us.svg";
 
+//---------------------- service page -----------------------------
+import uiux_service from "/images/uiux_service.svg";
+import web_service from "/images/web_service.svg";
+import app_service from "/images/app_service.svg";
+
+//--------------------------- uiux page ------------------------
+import uiux_page_img from "/images/uiux_page_img.svg";
+
 export {
   logo,
   call,
@@ -46,4 +54,8 @@ export {
   icon_phone_call,
   write_us,
   icon_write_us,
+  app_service,
+  uiux_service,
+  web_service,
+  uiux_page_img,
 };

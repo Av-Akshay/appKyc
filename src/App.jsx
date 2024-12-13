@@ -10,6 +10,8 @@ const About = lazy(() => import("./pages/About.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
 const Services = lazy(() => import("./pages/Services.jsx"));
 const SignUp = lazy(() => import("./pages/SignUp.jsx"));
+const UiUx = lazy(() => import("./pages/UiUxPage.jsx"));
+const WebDevPage = lazy(() => import("./pages/WebDevPage.jsx"));
 
 function App() {
   return (
@@ -54,6 +56,22 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <SignUp />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/uiux"
+            element={
+              <Suspense fallback={<Loader />}>
+                <UiUx />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/web"
+            element={
+              <Suspense fallback={<Loader />}>
+                <WebDevPage />
               </Suspense>
             }
           />
