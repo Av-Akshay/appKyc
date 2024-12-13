@@ -1,22 +1,22 @@
 import React from "react";
 
-import { webDev_page_img } from "../utils/icons";
+import { appDev_page_img } from "../utils/icons";
 import { Heading, Button, OfferingCard, WorkCard } from "../components";
 
-const WebDevPage = () => {
+const AppDevPage = () => {
   return (
     <React.Fragment>
       <div className="mt-14 w-11/12 m-auto grid grid-cols-2 grid-rows-1">
         <div className=" w-4/5 m-auto flex flex-col gap-10 items-center justify-center">
-          <Heading text="web development" className="border-b border-black" />
+          <Heading text="App development" className="border-b border-black" />
           <p className="text-center font-poppinsExtraLight text-xl">
-            We are Creative Nerds. We are Technocrats. But We are Passionate
-            about creating a Successful Brand for You!!!
+            We are Visionaries. We are Coders. But Above All, We are Dedicated
+            to Building Apps That Empower Your Brand's Success !!!
           </p>
           <Button type={"button"} text="see more" className={"px-5"} />
         </div>
         <div>
-          <img className="w-3/5 m-auto" src={webDev_page_img} alt="uiux" />
+          <img className="w-3/5 m-auto" src={appDev_page_img} alt="uiux" />
         </div>
       </div>
       <section className="mt-14 px-5 py-20 bg-section-background flex flex-col gap-5">
@@ -27,14 +27,10 @@ const WebDevPage = () => {
           />
         </div>
         <div className="w-11/12 m-auto flex items-center flex-wrap gap-5 justify-between">
-          <OfferingCard
-            text="Designing Adaptive 
-            and Responsive 
-            Websites using React js, Express js and node js"
-          />
-          <OfferingCard text="E-commerce solutions" />
-          <OfferingCard text="Website Audit & Restoration" />
-          <OfferingCard text="Website Maintenance" />
+          <OfferingCard text="Crafting Dynamic and Scalable Applications with React Native and Flutter (Android and Ios) for Seamless User Experiences" />
+          <OfferingCard text="Cross-Platform Development" />
+          <OfferingCard text="UI/UX Design" />
+          <OfferingCard text="Prototyping and Wireframing" />
         </div>
       </section>
       <section className="mt-14 px-5 py-20 bg-[#F3F3F3] flex flex-col gap-5">
@@ -44,13 +40,13 @@ const WebDevPage = () => {
         />
         <ul className="list-disc ml-10">
           <li className="text-xl font-poppinsExtraLight">
-            10 years of rendering excellent Web Development solutions.
+            10 years of rendering excellent App Development solutions.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            1000 projects successfully delivered.
+            100+ projects successfully delivered.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            200 websites management.
+            50 websites management.
           </li>
           <li className="text-xl font-poppinsExtraLight">
             Dedicated Project Manager.
@@ -94,4 +90,4 @@ const WebDevPage = () => {
   );
 };
 
-export default WebDevPage;
+export default AppDevPage;
