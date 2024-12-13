@@ -1,6 +1,6 @@
 import React from "react";
 
-import { uiux_page_img } from "../utils/icons";
+import { webDev_page_img } from "../utils/icons";
 import { Heading, Button, OfferingCard, WorkCard } from "../components";
 
 const WebDevPage = () => {
@@ -8,19 +8,15 @@ const WebDevPage = () => {
     <React.Fragment>
       <div className="mt-14 w-11/12 m-auto grid grid-cols-2 grid-rows-1">
         <div className=" w-4/5 m-auto flex flex-col gap-10 items-center justify-center">
-          <Heading
-            text="UI/UX Designing"
-            className="border-b border-black pb-1"
-          />
+          <Heading text="web development" className="border-b border-black" />
           <p className="text-center font-poppinsExtraLight text-xl">
-            {" "}
-            Launch Iconic Brands at the Intersection of Creativity and
-            Technology!!!{" "}
+            We are Creative Nerds. We are Technocrats. But We are Passionate
+            about creating a Successful Brand for You!!!
           </p>
           <Button type={"button"} text="see more" className={"px-5"} />
         </div>
         <div>
-          <img className="w-3/5 m-auto" src={uiux_page_img} alt="uiux" />
+          <img className="w-3/5 m-auto" src={webDev_page_img} alt="uiux" />
         </div>
       </div>
       <section className="mt-14 px-5 py-20 bg-section-background flex flex-col gap-5">
@@ -31,10 +27,16 @@ const WebDevPage = () => {
           />
         </div>
         <div className="w-11/12 m-auto flex items-center flex-wrap gap-5 justify-between">
-          <OfferingCard text="Information Architecture" />
-          <OfferingCard text="design system" />
-          <OfferingCard text="flow maps" />
-          <OfferingCard text="low-fidelity hight-fidelity wireframes" />
+          <OfferingCard
+            text="Designing Adaptive 
+            and Responsive 
+            Websites using 
+            Magneto, PHP, Drupal 
+            & WordPress"
+          />
+          <OfferingCard text="E-commerce solutions" />
+          <OfferingCard text="Website Audit & Restoration" />
+          <OfferingCard text="Website Maintenance" />
         </div>
       </section>
       <section className="mt-14 px-5 py-20 bg-[#F3F3F3] flex flex-col gap-5">
@@ -44,22 +46,16 @@ const WebDevPage = () => {
         />
         <ul className="list-disc ml-10">
           <li className="text-xl font-poppinsExtraLight">
-            {" "}
-            Profile audience and create user stories at an early stage.{" "}
+            10 years of rendering excellent Web Development solutions.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            {" "}
-            Analyze and draft the complexity of the project and time frame
-            before brainstorming with the customer.
+            1000 projects successfully delivered.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            {" "}
-            Focus on the product goal and design, simultaneously.{" "}
+            200 websites management.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            {" "}
-            Our Design Thinking team works in collaboration with the web
-            development team to build and deliver projects, promptly. {" "}
+            Dedicated Project Manager.
           </li>
         </ul>
       </section>

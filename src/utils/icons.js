@@ -31,6 +31,9 @@ import app_service from "/images/app_service.svg";
 //--------------------------- uiux page ------------------------
 import uiux_page_img from "/images/uiux_page_img.svg";
 
+//--------------------------- web development page ------------------------
+import webDev_page_img from "/images/webDev_page_img.svg";
+
 export {
   logo,
   call,
@@ -58,4 +61,5 @@ export {
   uiux_service,
   web_service,
   uiux_page_img,
+  webDev_page_img,
 };

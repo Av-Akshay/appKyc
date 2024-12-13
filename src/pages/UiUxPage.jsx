@@ -8,10 +8,7 @@ const UiUxPage = () => {
     <React.Fragment>
       <div className="mt-14 w-11/12 m-auto grid grid-cols-2 grid-rows-1">
         <div className=" w-4/5 m-auto flex flex-col gap-10 items-center justify-center">
-          <Heading
-            text="UI/UX Designing"
-            className="border-b border-black pb-1"
-          />
+          <Heading text="UI/UX Designing" className="border-b border-black" />
           <p className="text-center font-poppinsExtraLight text-xl">
             {" "}
             Launch Iconic Brands at the Intersection of Creativity and
