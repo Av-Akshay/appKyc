@@ -5,7 +5,7 @@ import { logo } from "../utils/icons";
 const Navbar = () => {
   return (
     <div className="navbar justify-between min-h-[10vh] ">
-      <div className="navbar-start">
+      <div className="navbar-start !flex items-center">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -25,58 +25,64 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li className="bg-transparent">
-              <NavLink>Item 1</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink>Parent</NavLink>
-              <ul className="p-2">
-                <li>
-                  <NavLink>Submenu 1</NavLink>
-                </li>
-                <li>
-                  <NavLink>Submenu 2</NavLink>
-                </li>
-              </ul>
+              <NavLink to={"/services"}>Services</NavLink>
             </li>
             <li>
-              <NavLink>Item 3</NavLink>
+              <NavLink to="/about">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact Us</NavLink>
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl z-10 absolute">
+        <Link className="btn btn-ghost text-xl z-10">
           <img className="w-full h-12" src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex mr-5">
         <ul className="menu-horizontal px-1 gap-8">
-          <li className="bg-transparent">
-            <NavLink className={"font-poppinsSemibold text-slate-800"}>
-              Item 1
+          <li className="!bg-transparent">
+            <NavLink
+              to={"/"}
+              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+            >
+              Home
             </NavLink>
           </li>
-          <li className="bg-transparent">
-            <NavLink className={"font-poppinsSemibold text-slate-800"}>
-              Item 2
+          <li className="!bg-transparent">
+            <NavLink
+              to={"/services"}
+              className={
+                "!font-poppinsSemibold !text-slate-800 !bg-transparent"
+              }
+            >
+              Services
             </NavLink>
           </li>
-          <li className="bg-transparent">
-            <NavLink className={"font-poppinsSemibold text-slate-800"}>
-              Item 3
+          <li className="!bg-transparent">
+            <NavLink
+              to={"/about"}
+              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+            >
+              About Us
             </NavLink>
           </li>
-          <li className="bg-transparent">
-            <NavLink className={"font-poppinsSemibold text-slate-800"}>
-              Item 4
+          <li className="!bg-transparent">
+            <NavLink
+              to={"/contact"}
+              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+            >
+              Contact Us
             </NavLink>
           </li>
         </ul>
       </div>
-      {/* <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div> */}
     </div>
   );
 };
