@@ -1,6 +1,7 @@
 import Button from "./Button";
 import OfferingCard from "./OfferingCard";
 import WorkCard from "./WorkCard";
+import Heading from "./Heading";
 
 //----------------------- home page ------------------------
 import HeroSection from "./home/HeroSection";
@@ -15,7 +16,8 @@ import ContactForm from "./contact/ContactForm";
 //----------------------- service page-----------------------
 import ServicePageCard from "./service/ServicePageCard";
 
-import Heading from "./Heading";
+//----------------------- about page-----------------------
+import AboutPageCard from "./about/AboutPageCard";
 
 export {
   Button,
@@ -29,4 +31,5 @@ export {
   ContactForm,
   ServicePageCard,
   Heading,
+  AboutPageCard,
 };

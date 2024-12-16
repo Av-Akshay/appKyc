@@ -37,6 +37,16 @@ import webDev_page_img from "/images/webDev_page_img.svg";
 //--------------------------- app development page ------------------------
 import appDev_page_img from "/images/appDev_page_img.svg";
 
+//--------------------------- about page ------------------------
+import brief_intro from "/images/brief_intro.svg";
+import ethic from "/images/ethic.svg";
+import owenship from "/images/Owenship.svg";
+import think from "/images/Think.svg";
+import vision from "/images/vision.svg";
+
+//------------------------------ career page ------------------------------------
+import businessman from "/images/businessman.svg";
+
 export {
   logo,
   call,
@@ -66,4 +76,10 @@ export {
   uiux_page_img,
   webDev_page_img,
   appDev_page_img,
+  brief_intro,
+  ethic,
+  owenship,
+  think,
+  vision,
+  businessman,
 };

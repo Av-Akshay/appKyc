@@ -13,6 +13,7 @@ const SignUp = lazy(() => import("./pages/SignUp.jsx"));
 const UiUx = lazy(() => import("./pages/UiUxPage.jsx"));
 const WebDevPage = lazy(() => import("./pages/WebDevPage.jsx"));
 const AppDevPage = lazy(() => import("./pages/AppDevPage.jsx"));
+const Career = lazy(() => import("./pages/Career.jsx"));
 
 function App() {
   return (
@@ -73,6 +74,14 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <AppDevPage />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/career"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Career />
               </Suspense>
             }
           />
