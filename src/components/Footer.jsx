@@ -28,17 +28,19 @@ const Footer = () => {
         }}
         className="relative bg-section-background py-5 text-white font-serif text-base pt-20 "
       >
-        <div className="w-11/12 m-auto flex items-baseline justify-between mb-5">
-          <div className="flex flex-col gap-5">
+        <div className="w-11/12 m-auto flex items-baseline justify-between mb-5 max-md:flex-wrap max-md:justify-center max-md:gap-10 max-[450px]:flex-col max-[450px]:items-center max-[450px]:gap-5">
+          <div className="flex flex-col gap-5 max-md:items-center max-md:gap-2">
             <h1 className="text-xl"> Address:- </h1>
-            <p>IT Park, Dehradun, Uttarakhand, India</p>
+            <p className="max-[450px]:text-center">
+              IT Park, Dehradun, Uttarakhand, India
+            </p>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 max-[450px]:items-center max-[450px]:gap-2">
             <h1 className="text-xl"> Contact Us:- </h1>
             <span>Phone: +91-XXXXXXXXXX</span>
             <span>Email: poojakycworld@gmail.com</span>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 max-[450px]:items-center max-[450px]:gap-2">
             <h1 className="text-xl"> Quick Links:- </h1>
             <ul>
               <li>
