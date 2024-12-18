@@ -21,7 +21,7 @@ const DetailSection = () => {
         objectives and end-user requirements to create 
         a draft of Low-Fidelity Wireframes. "
         pic={strategy}
-        className1="border-yellowColor -right-20"
+        className1="border-yellowColor -right-20 max-lg:right-0"
       />
       <DetailCard
         number={second}
@@ -29,7 +29,7 @@ const DetailSection = () => {
         functionality of your product. "
         pic={design}
         className2="flex-row-reverse"
-        className3="border-pinkColor -left-20 justify-end"
+        className3="border-pinkColor -left-20 justify-end max-lg:left-0"
       />
       <DetailCard
         number={third}
@@ -38,7 +38,7 @@ const DetailSection = () => {
         until we achieve flawless UX/UI functionality and 
         experience."
         pic={develop}
-        className1="border-blueColor -right-20"
+        className1="border-blueColor -right-20 max-lg:right-0"
       />
       <DetailCard
         number={fourth}
@@ -48,7 +48,7 @@ const DetailSection = () => {
         new functionalities "
         pic={support}
         className2="flex-row-reverse"
-        className3="border-greenColor -left-20 justify-end"
+        className3="border-greenColor -left-20 justify-end max-lg:left-0"
       />
     </div>
   );
