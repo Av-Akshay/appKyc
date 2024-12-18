@@ -85,7 +85,10 @@ const About = () => {
         style={{ backgroundImage: `url(${vision})` }}
         className="w-11/12 m-auto bg-cover bg-no-repeat bg-center rounded-xl py-10 px-5 my-14 flex flex-col gap-3"
       >
-        <Heading text="Our Vision" className="!text-gray-700" />
+        <Heading
+          text="Our Vision"
+          className="!text-gray-700 max-sm:text-center"
+        />
         <p className="font-poppinsMedium text-lg text-gray-700 tracking-wider">
           We seek to create innovative yet profitable solutions for businesses
           that spell SUCCESS.
@@ -95,8 +98,11 @@ const About = () => {
         <div className=" absolute rotate-90 left-1/2 -top-14 -translate-x-1/2  w-[5%] border-dotted border-2 border-black">
           {" "}
         </div>
-        <Heading text="Why choose AppKyc ?" className="!text-white" />
-        <div className="grid grid-cols-3 grid-rows-1 mt-5">
+        <Heading
+          text="Why choose AppKyc ?"
+          className="!text-white max-md:text-center"
+        />
+        <div className="grid grid-cols-3 grid-rows-1 mt-5 max-md:grid-cols-2 max-md:grid-rows-2 max-[550px]:grid-cols-1 max-[550px]:grid-rows-3 ">
           <AboutPageCard
             pic={owenship}
             title="Ownership"
@@ -113,6 +119,7 @@ const About = () => {
           />
           <AboutPageCard
             pic={ethic}
+            className={"max-md:col-span-2 max-[550px]:col-span-1"}
             title="Work Ethic"
             text="We are proactive, organized, result-driven, and prompt 
             because we expect high performance from ourselves. 
