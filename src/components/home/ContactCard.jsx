@@ -3,10 +3,14 @@ import React from "react";
 const ContactCard = ({ pic, title, text, className }) => {
   return (
     <div
-      className={`bg-section-background px-5 py-10 flex flex-col items-center justify-center gap-5 ${className}`}
+      className={`bg-section-background px-5 py-10 flex flex-col items-center justify-center gap-5 max-sm:gap-2 ${className}`}
     >
-      <img className="w-24 h-24" src={pic} alt={title} />
-      <h1 className="text-white font-poppinsMedium text-2xl capitalize">
+      <img
+        className="w-24 h-24 max-sm:w-20 max-sm:h-20"
+        src={pic}
+        alt={title}
+      />
+      <h1 className="text-white font-poppinsMedium text-2xl max-sm:text-xl capitalize">
         {" "}
         {title}{" "}
       </h1>

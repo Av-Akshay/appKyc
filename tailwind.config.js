@@ -59,6 +59,9 @@ export default {
         poppinsExtraLight: ["poppinsExtraLight"],
         poppinsRegular: ["poppinsRegular"],
       },
+      gridTemplateRows: {
+        career: "0.5fr 1fr",
+      },
     },
   },
   plugins: [require("daisyui", "tailwindcss-textshadow", "tailwind-clip-path")],

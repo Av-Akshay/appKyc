@@ -103,3 +103,21 @@
 .underline:hover::after {
   width: 100%;
 }
+
+.upToDown {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  /* transition: all 0.5s linear; */
+  animation: upDown 0.5s linear;
+}
+@keyframes upDown {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

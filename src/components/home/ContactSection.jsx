@@ -10,18 +10,22 @@ const ContactSection = () => {
         {" "}
         Get in Touch{" "}
       </h1>
-      <div className="flex items-center justify-center gap-10 mt-10">
+      <div className="flex items-center justify-center gap-10 max-sm:gap-5 max-sm:flex-col mt-10">
         <ContactCard
-          className={"w-[26%] rounded-3xl h-[20rem]"}
+          className={
+            "w-[26%] rounded-3xl h-[20rem] max-lg:w-2/5 max-sm:w-2/3 max-[400px]:w-11/12 max-sm:h-[16rem]"
+          }
           pic={call}
           title="Call Us"
-          text=" Contact Number :- (+91) 1234567890 "
+          text="Phone :- (+91) 1234567890 "
         />
         <ContactCard
-          className={"w-[26%] rounded-3xl h-[20rem]"}
+          className={
+            "w-[26%] rounded-3xl h-[20rem] max-lg:w-2/5 max-sm:w-2/3 max-[400px]:w-11/12 max-sm:h-[16rem]"
+          }
           pic={write}
           title="Write Us"
-          text=" Email:- user@gmail.com "
+          text="Email :- user@gmail.com "
         />
       </div>
     </div>
