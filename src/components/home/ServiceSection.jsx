@@ -7,7 +7,7 @@ const ServiceSection = () => {
   return (
     <div className="pb-36 relative max-md:pb-10">
       <div className=" relative">
-        <div className=" absolute rotate-90 left-1/2 -top-20 -translate-x-1/2  w-[6%] border-dotted border-2 border-black">
+        <div className=" absolute rotate-90 left-1/2 -top-20 -translate-x-1/2  w-[6%] max-md:w-[10%] border-dotted border-2 border-black">
           {" "}
         </div>
         <div className="w-1/2 mx-auto flex items-center justify-center my-40 max-sm:my-28 ">
@@ -16,7 +16,7 @@ const ServiceSection = () => {
             We are one of the most effective Web & App Development Company{" "}
           </h1>
         </div>
-        <div className=" absolute rotate-90 left-1/2 -bottom-20 -translate-x-1/2 w-[6%] border-dotted border-2 border-black">
+        <div className=" absolute rotate-90 left-1/2 -bottom-20 -translate-x-1/2 w-[6%] max-md:w-[10%] border-dotted border-2 border-black">
           {" "}
         </div>
       </div>
@@ -47,7 +47,7 @@ const ServiceSection = () => {
                 The Quality Of You App With Us."
           title={"App Development"}
         />
-        <div className="absolute rotate-90 left-1/2 -bottom-[32%] -translate-x-1/2 w-[6%] border-dotted border-2 border-black"></div>
+        <div className="absolute rotate-90 left-1/2 -bottom-[18%] max-md:bottom-5 -translate-x-1/2 w-[6%] max-md:w-[10%] border-dotted border-2 border-black"></div>
       </div>
     </div>
   );
