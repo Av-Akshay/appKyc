@@ -13,9 +13,9 @@ const ContactForm = () => {
     >
       <form
         onSubmit={handleSubmit(handelSubmitForm)}
-        className=" w-4/5 flex flex-col gap-5"
+        className=" w-4/5 flex flex-col gap-5 max-sm:w-11/12"
       >
-        <div className="w-full flex gap-2 items-center">
+        <div className="w-full flex gap-2 items-center max-sm:flex-col">
           <Input
             label="full name"
             type={"text"}
@@ -81,7 +81,7 @@ const ContactForm = () => {
           text={"submit"}
           type={"submit"}
           className={
-            "border-2 py-2 rounded-xl  px-8 bg-[#EE6E36]  border-white text-white w-fit hover:bg-[#F59E78] transition-all"
+            "border-2 py-2 rounded-xl  px-8 bg-[#EE6E36]  border-white text-black w-fit hover:bg-[#F59E78] transition-all max-sm:w-full text-center"
           }
         />
       </form>

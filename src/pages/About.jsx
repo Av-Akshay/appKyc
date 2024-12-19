@@ -6,12 +6,12 @@ import { Heading, AboutPageCard } from "../components";
 const About = () => {
   return (
     <React.Fragment>
-      <div className="flex flex-col items-center justify-center my-10">
+      <div className="flex flex-col items-center justify-center my-10 px-5">
         <Heading
           text="About Us"
           className="uppercase relative after:contents-[' '] after:absolute after:h-1 after:w-1/2 after:-translate-x-1/2 after:-bottom-5 after:left-1/2 after:bg-gray-300 after:rounded-lg"
         />
-        <p className="my-10 font-poppinsExtraLight leading-7 text-sm tracking-wide">
+        <p className="my-10 font-poppinsExtraLight leading-7 text-sm tracking-wide text-center">
           AppKyc- Committed to Creating Successful Entrepreneurs and Brands!!!
         </p>
       </div>
@@ -94,6 +94,8 @@ const About = () => {
           that spell SUCCESS.
         </p>
       </section>
+
+      {/* --------------------------why choose appkyc */}
       <section className="bg-section-background mt-28 relative py-10 px-5">
         <div className=" absolute rotate-90 left-1/2 -top-14 -translate-x-1/2  w-[5%] border-dotted border-2 border-black">
           {" "}
