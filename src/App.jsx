@@ -78,6 +78,14 @@ function App() {
             }
           />
           <Route
+            path="/web"
+            element={
+              <Suspense fallback={<Loader />}>
+                <WebDevPage />
+              </Suspense>
+            }
+          />
+          <Route
             path="/career"
             element={
               <Suspense fallback={<Loader />}>
