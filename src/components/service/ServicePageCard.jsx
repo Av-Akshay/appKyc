@@ -9,28 +9,32 @@ const ServicePageCard = ({
   className,
 }) => {
   return (
-    <div className={`flex items-center justify-center ${className} `}>
-      <div className="w-1/2 ">
+    <div
+      className={`flex items-center justify-center max-sm:flex-col ${
+        className !== "" ? className : ""
+      } `}
+    >
+      <div className="w-1/2 max-sm:w-4/5 ">
         <img src={pic} alt={heading} />
       </div>
       <div
-        className={`flex flex-col gap-2 w-1/2 ${
+        className={`flex flex-col gap-2 w-1/2 max-sm:items-center max-sm:w-4/5 ${
           !className ? "items-start " : " items-end "
         } `}
       >
         <div
-          className={`flex flex-col gap-1 ${
+          className={`flex flex-col gap-1 max-sm:items-center ${
             !className ? "items-start " : " items-end "
           }`}
         >
           <p className={`uppercase ${subHeadingColor}`}> {subheading} </p>
-          <h2 className="uppercase text-black font-poppinsSemibold text-2xl ">
+          <h2 className="uppercase text-black font-poppinsSemibold text-2xl max-sm:text-center max-sm:text-xl">
             {" "}
             {heading}{" "}
           </h2>
         </div>
         <p
-          className={`text-black font-poppinsExtraLight ${
+          className={`text-black font-poppinsExtraLight max-sm:text-center ${
             !className ? "text-start " : " text-end "
           } `}
         >

@@ -7,15 +7,15 @@ const Services = () => {
   return (
     <div className=" w-11/12 m-auto">
       <div className="flex flex-col items-center justify-center mt-10">
-        <h1 className=" mb-5 uppercase cursor-pointer text-center relative text-black font-poppinsBold text-5xl after:content-[' '] after:w-1/2 after:-bottom-5 after:left-1/2 after:-translate-x-1/2 after:rounded-md after:absolute after:h-[0.35rem] after:bg-gray-300">
+        <h1 className="mb-5 uppercase cursor-pointer text-center relative text-black font-poppinsBold text-5xl after:content-[' '] after:w-1/2 after:-bottom-5 after:left-1/2 after:-translate-x-1/2 after:rounded-md after:absolute after:h-[0.35rem] after:bg-gray-300 max-md:text-4xl max-sm:text-3xl">
           our services
         </h1>
       </div>
       <div className="flex flex-col items-center justify-center mt-10">
-        <h1 className=" mb-5 cursor-pointer text-center relative text-black font-poppinsMedium text-5xl">
+        <h1 className=" mb-5 cursor-pointer text-center relative text-black font-poppinsMedium text-5xl max-md:text-4xl max-sm:text-3xl">
           what We Do
         </h1>
-        <p className="text-black font-poppinsExtraLight text-center mt-5 w-[33%]">
+        <p className="text-black font-poppinsExtraLight text-center mt-5 w-[33%] max-md:w-4/5">
           We offer full-funnel digital marketing, web design & development
           services to help businesses gain a competitive edge.
         </p>
@@ -29,6 +29,7 @@ const Services = () => {
           pera={
             "Launch Iconic Brands at the Intersection of Creativity and Technology."
           }
+          className={""}
         />
         <ServicePageCard
           pic={web_service}
@@ -48,6 +49,7 @@ const Services = () => {
           pera={
             "We are Visionaries. We are Coders. But Above All, We are Dedicated to Building Apps That Empower Your Brand's Success."
           }
+          className={""}
         />
       </section>
     </div>
