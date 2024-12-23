@@ -14,6 +14,9 @@ const UiUx = lazy(() => import("./pages/UiUxPage.jsx"));
 const WebDevPage = lazy(() => import("./pages/WebDevPage.jsx"));
 const AppDevPage = lazy(() => import("./pages/AppDevPage.jsx"));
 const Career = lazy(() => import("./pages/Career.jsx"));
+const Blogs = lazy(() => import("./pages/Blogs.jsx"));
+const SingleBlog = lazy(() => import("./pages/SingleBlog.jsx"));
+const PostBlog = lazy(() => import("./pages/PostBlog.jsx"));
 
 function App() {
   return (
@@ -90,6 +93,30 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <Career />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/blogs"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Blogs />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/singleBlog"
+            element={
+              <Suspense fallback={<Loader />}>
+                <SingleBlog />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/post-blog"
+            element={
+              <Suspense fallback={<Loader />}>
+                <PostBlog />
               </Suspense>
             }
           />

@@ -47,6 +47,9 @@ import vision from "/images/vision.svg";
 //------------------------------ career page ------------------------------------
 import businessman from "/images/businessman.svg";
 
+// ---------------------blogs page =--------------------
+import blogPic from "/images/blogPic.svg";
+
 export {
   logo,
   call,
@@ -82,4 +85,5 @@ export {
   think,
   vision,
   businessman,
+  blogPic,
 };

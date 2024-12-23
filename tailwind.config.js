@@ -61,6 +61,10 @@ export default {
       },
       gridTemplateRows: {
         career: "0.5fr 1fr",
+        blogCard: "18rem",
+      },
+      gridTemplateColumns: {
+        blogs: "0.4fr 1fr",
       },
     },
   },

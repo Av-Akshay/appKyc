@@ -18,6 +18,8 @@ import ServicePageCard from "./service/ServicePageCard";
 
 //----------------------- about page-----------------------
 import AboutPageCard from "./about/AboutPageCard";
+//----------------------- blogs page-----------------------
+import BlogCard from "./blogs/BlogCard";
 
 export {
   Button,
@@ -32,4 +34,5 @@ export {
   ServicePageCard,
   Heading,
   AboutPageCard,
+  BlogCard,
 };

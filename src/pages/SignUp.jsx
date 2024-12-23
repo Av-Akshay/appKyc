@@ -33,7 +33,7 @@ const SignUp = () => {
           <Button
             type="submit"
             text={"Submit"}
-            className={"w-full bg-light text-white"}
+            className={"w-full bg-light !text-white"}
           />
         </form>
       </div>

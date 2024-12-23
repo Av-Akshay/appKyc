@@ -1,7 +1,7 @@
 import React from "react";
 
 import { uiux_page_img } from "../utils/icons";
-import { Heading, Button, OfferingCard, WorkCard } from "../components";
+import { Heading, OfferingCard, WorkCard } from "../components";
 
 const UiUxPage = () => {
   return (
