@@ -17,6 +17,7 @@ const Career = lazy(() => import("./pages/Career.jsx"));
 const Blogs = lazy(() => import("./pages/Blogs.jsx"));
 const SingleBlog = lazy(() => import("./pages/SingleBlog.jsx"));
 const PostBlog = lazy(() => import("./pages/PostBlog.jsx"));
+const PostJob = lazy(() => import("./pages/PostJob.jsx"));
 
 function App() {
   return (
@@ -117,6 +118,14 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <PostBlog />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/post-jobs"
+            element={
+              <Suspense fallback={<Loader />}>
+                <PostJob />
               </Suspense>
             }
           />
