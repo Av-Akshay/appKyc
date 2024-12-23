@@ -1,7 +1,7 @@
 import React from "react";
+
 import Input from "../components/Input";
 import usePostBlog from "../hooks/usePostBlog";
-import { Button } from "../components";
 
 const PostBlog = () => {
   const { errors, handleSubmit, message, register, submitForm } = usePostBlog();
@@ -9,7 +9,7 @@ const PostBlog = () => {
   return (
     <div className="bg-section-background flex flex-col gap-5 items-center justify-center w-full py-16">
       <h1 className="text-5xl text-white font-poppinsSemibold ">Post Blogs</h1>
-      <div className="w-3/5 p-10 border-white border-2 rounded-2xl mb-10">
+      <div className="w-3/5 p-10 border-white border-2 rounded-2xl mb-10 max-sm:w-11/12">
         <form
           className="flex flex-col gap-3"
           onSubmit={handleSubmit(submitForm)}

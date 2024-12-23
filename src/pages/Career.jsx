@@ -83,7 +83,15 @@ const Career = () => {
         </div>
       </section>
       <section className="px-10">
-        <Heading text="Our Openings" className="my-10 max-md:text-2xl" />
+        <div className="flex items-center justify-between max-md:flex-col max-md:gap-5">
+          <Heading text="Our Openings" className="my-10 max-md:text-2xl" />
+          <Link
+            to={"/post-jobs"}
+            className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
+          >
+            Post Jobs
+          </Link>
+        </div>
         <div className="w-11/12 m-auto flex flex-col gap-2">
           <div className="mb-5">
             <div className="w-full h-[2px] bg-gray-300"></div>
