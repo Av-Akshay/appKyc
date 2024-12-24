@@ -58,7 +58,7 @@ function App() {
             }
           />
           <Route
-            path="/sign-up"
+            path="/admin-console"
             element={
               <Suspense fallback={<Loader />}>
                 <SignUp />
