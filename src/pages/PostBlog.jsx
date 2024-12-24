@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
+import useToken from "../hooks/useToken";
 import Input from "../components/Input";
 import usePostBlog from "../hooks/usePostBlog";
 
 const PostBlog = () => {
   const { errors, handleSubmit, message, register, submitForm } = usePostBlog();
-
+  const navigate = useNavigate();
+  const { token } = useToken();
+  useEffect(() => {
+    if (!token) {
+      navigate("/admin-console");
+    }
+  }, []);
   return (
     <div className="bg-section-background flex flex-col gap-5 items-center justify-center w-full py-16">
-      <h1 className="text-5xl text-white font-poppinsSemibold ">Post Blogs</h1>
-      <div className="w-3/5 p-10 border-white border-2 rounded-2xl mb-10 max-sm:w-11/12">
+      {message ? (
+        <h1 className="text-4xl font-bold  text-red-500 mt-10 font-serif ">
+          {message}
+        </h1>
+      ) : (
+        <h1 className="text-4xl font-bold  text-white mt-10 font-serif ">
+          Post Blogs
+        </h1>
+      )}
+      <div className="w-3/5 p-10 border-white shadow-lg shadow-white border-2 rounded-2xl mb-10 max-sm:w-11/12">
         <form
           className="flex flex-col gap-3"
           onSubmit={handleSubmit(submitForm)}
