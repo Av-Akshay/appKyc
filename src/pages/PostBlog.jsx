@@ -6,7 +6,8 @@ import Input from "../components/Input";
 import usePostBlog from "../hooks/usePostBlog";
 
 const PostBlog = () => {
-  const { errors, handleSubmit, message, register, submitForm } = usePostBlog();
+  const { errors, handleSubmit, message, register, submitForm, loading } =
+    usePostBlog();
   const navigate = useNavigate();
   const { token } = useToken();
   useEffect(() => {
@@ -70,7 +71,7 @@ const PostBlog = () => {
               Content:
             </label>
             <textarea
-              className="rounded-lg"
+              className="rounded-lg px-5 py-2"
               id="content"
               cols={15}
               rows={5}
@@ -86,11 +87,11 @@ const PostBlog = () => {
           </div>
           <div className="flex flex-col">
             <Input
-              className="rounded-lg border border-white !p-0 overflow-hidden my-1"
-              label="Upload photo:"
+              className="rounded-lg border border-white !p-0 overflow-hidden my-1 !text-white"
+              label="Upload Image:"
               type="file"
-              {...register("photo", {
-                required: "Photo is required.",
+              {...register("image", {
+                required: "Image is required.",
                 validate: {
                   // Validate file type
                   acceptedFormats: (files) =>
@@ -103,13 +104,17 @@ const PostBlog = () => {
                 },
               })}
             />
-            {errors.photo && (
+            {errors.image && (
               <p className="error-message text-red-500">
-                {errors?.photo?.message}
+                {errors?.image?.message}
               </p>
             )}
           </div>
-          <button className="text-section-background font-poppinsSemibold py-1 capitalize text-lg w-full text-center bg-white">
+          <button
+            disabled={loading ? true : false}
+            type="submit"
+            className="text-section-background font-poppinsSemibold py-1 capitalize text-lg w-full text-center bg-white"
+          >
             Submit
           </button>
         </form>
