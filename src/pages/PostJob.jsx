@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Input from "../components/Input";
-import usePostJobs from "../hooks/usePostJobs";
+import useJobs from "../hooks/usePostJobs";
 import useToken from "../hooks/useToken";
 
 const PostJob = () => {
-  const { errors, handleSubmit, message, register, submitForm } = usePostJobs();
+  const { errors, handleSubmit, message, register, submitForm } = useJobs();
 
   const navigate = useNavigate();
   const { token } = useToken();
@@ -72,7 +72,7 @@ const PostJob = () => {
               Description:
             </label>
             <textarea
-              className="rounded-lg"
+              className="rounded-lg px-5 py-1"
               id="Description"
               cols={15}
               rows={5}
@@ -86,7 +86,10 @@ const PostJob = () => {
               </p>
             )}
           </div>
-          <button className="text-section-background font-poppinsSemibold py-1 capitalize text-lg w-full text-center bg-white">
+          <button
+            type="submit"
+            className="text-section-background font-poppinsSemibold py-1 capitalize text-lg w-full text-center bg-white"
+          >
             Submit
           </button>
         </form>
