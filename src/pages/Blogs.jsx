@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Heading, BlogCard } from "../components";
-import { blogPic } from "../utils/icons";
-// import usePostBlog from "../hooks/usePostBlog";
+import { Heading, BlogCard, Meta } from "../components";
+import metaData from "../utils/constants";
 import useBlog from "../hooks/useBlog";
 
 const Blogs = () => {
+  const { description, keywords, title } = metaData.blogs;
   const { getMessage, blogs, loading } = useBlog();
   return (
     <>
+      <Meta title={title} description={description} keywords={keywords} />
       {loading ? (
         <h1 className="my-16 font-poppinsBold text-2xl text-black text-center">
           {" "}

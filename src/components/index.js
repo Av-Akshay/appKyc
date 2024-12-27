@@ -2,6 +2,7 @@ import Button from "./Button";
 import OfferingCard from "./OfferingCard";
 import WorkCard from "./WorkCard";
 import Heading from "./Heading";
+import Meta from "./Meta";
 
 //----------------------- home page ------------------------
 import HeroSection from "./home/HeroSection";
@@ -39,4 +40,5 @@ export {
   AboutPageCard,
   BlogCard,
   JobCard,
+  Meta,
 };

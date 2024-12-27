@@ -1,11 +1,14 @@
 import React from "react";
 
+import metaData from "../utils/constants";
 import { vision, owenship, ethic, think, brief_intro } from "../utils/icons";
-import { Heading, AboutPageCard } from "../components";
+import { Heading, AboutPageCard, Meta } from "../components";
 
 const About = () => {
+  const { title, description, keywords } = metaData?.about;
   return (
     <React.Fragment>
+      <Meta title={title} description={description} keywords={keywords} />
       <div className="flex flex-col items-center justify-center my-10 px-5">
         <Heading
           text="About Us"

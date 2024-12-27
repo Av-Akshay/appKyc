@@ -11,7 +11,6 @@ const useCareer = () => {
     setMessage("");
     try {
       const response = await axiosInstance.get("jobs");
-      console.log(response);
 
       if (response.status === 200) {
         setJobs(response?.data);

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import metaData from "../utils/constants";
 import { businessman } from "../utils/icons";
-import { Heading, OfferingCard, JobCard } from "../components";
+import { Heading, OfferingCard, JobCard, Meta } from "../components";
 import useCareer from "../hooks/useCareer";
 
 const Career = () => {
-  const [apply, setApply] = useState(false);
+  const { description, keywords, title } = metaData.career;
   const { jobs, loading, message } = useCareer();
   return (
     <React.Fragment>
+      <Meta title={title} description={description} keywords={keywords} />
       <section className="grid grid-cols-2 grid-rows-1 place-content-center my-16 max-sm:grid-cols-1 max-sm:grid-rows-career">
         <div className="flex items-center justify-center w-3/5 m-auto max-md:w-full max-sm:order-2">
           <Heading

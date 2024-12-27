@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 import Navbar from "./components/Navbar";
 import { Loader } from "./components";
@@ -23,114 +24,116 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Home />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <Suspense fallback={<Loader />}>
-                <About />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Contact />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/services"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Services />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/admin-console"
-            element={
-              <Suspense fallback={<Loader />}>
-                <SignUp />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/uiux"
-            element={
-              <Suspense fallback={<Loader />}>
-                <UiUx />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/app"
-            element={
-              <Suspense fallback={<Loader />}>
-                <AppDevPage />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/web"
-            element={
-              <Suspense fallback={<Loader />}>
-                <WebDevPage />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/career"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Career />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/blogs"
-            element={
-              <Suspense fallback={<Loader />}>
-                <Blogs />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/singleBlog/:id"
-            element={
-              <Suspense fallback={<Loader />}>
-                <SingleBlog />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/post-blog"
-            element={
-              <Suspense fallback={<Loader />}>
-                <PostBlog />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/post-jobs"
-            element={
-              <Suspense fallback={<Loader />}>
-                <PostJob />
-              </Suspense>
-            }
-          />
-        </Routes>
-        <Footer />
+        <HelmetProvider>
+          <Navbar />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Contact />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/services"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Services />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/admin-console"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <SignUp />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/uiux"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <UiUx />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/app"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <AppDevPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/web"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <WebDevPage />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/career"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Career />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/blogs"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Blogs />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/singleBlog/:id"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <SingleBlog />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/post-blog"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <PostBlog />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/post-jobs"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <PostJob />
+                </Suspense>
+              }
+            />
+          </Routes>
+          <Footer />
+        </HelmetProvider>
       </Router>
     </React.Fragment>
   );

@@ -1,11 +1,14 @@
 import React from "react";
 
 import { webDev_page_img } from "../utils/icons";
-import { Heading, Button, OfferingCard, WorkCard } from "../components";
+import { Heading, OfferingCard, WorkCard, Meta } from "../components";
+import metaData from "../utils/constants";
 
 const WebDevPage = () => {
+  const { description, keywords, title } = metaData.webService;
   return (
     <React.Fragment>
+      <Meta title={title} description={description} keywords={keywords} />
       <div className="mt-14 w-11/12 m-auto grid grid-cols-2 grid-rows-1 max-md:grid-cols-1 max-md:grid-rows-2">
         <div className=" w-4/5 m-auto flex flex-col gap-10 items-center justify-center max-md:order-2">
           <Heading text="web development" className="border-b border-black" />
