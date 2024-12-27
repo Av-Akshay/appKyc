@@ -28,16 +28,52 @@ const Navbar = () => {
             className=" menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li className="bg-transparent">
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-poppinsSemibold !text-them !bg-transparent`
+                    : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to={"/services"}>Services</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-poppinsSemibold !text-them !bg-transparent`
+                    : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+                }
+                to={"/services"}
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About Us</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-poppinsSemibold !text-them !bg-transparent`
+                    : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+                }
+                to="/about"
+              >
+                About Us
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-poppinsSemibold !text-them !bg-transparent`
+                    : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+                }
+                to="/contact"
+              >
+                Contact Us
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -50,7 +86,11 @@ const Navbar = () => {
           <li className="!bg-transparent">
             <NavLink
               to={"/"}
-              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+              className={({ isActive }) =>
+                isActive
+                  ? `font-poppinsSemibold !text-them !bg-transparent`
+                  : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+              }
             >
               Home
             </NavLink>
@@ -58,8 +98,10 @@ const Navbar = () => {
           <li className="!bg-transparent">
             <NavLink
               to={"/services"}
-              className={
-                "!font-poppinsSemibold !text-slate-800 !bg-transparent"
+              className={({ isActive }) =>
+                isActive
+                  ? `font-poppinsSemibold !text-them !bg-transparent`
+                  : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
               }
             >
               Services
@@ -68,7 +110,11 @@ const Navbar = () => {
           <li className="!bg-transparent">
             <NavLink
               to={"/about"}
-              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+              className={({ isActive }) =>
+                isActive
+                  ? `font-poppinsSemibold !text-them !bg-transparent`
+                  : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+              }
             >
               About Us
             </NavLink>
@@ -76,7 +122,11 @@ const Navbar = () => {
           <li className="!bg-transparent">
             <NavLink
               to={"/contact"}
-              className={"font-poppinsSemibold !text-slate-800 !bg-transparent"}
+              className={({ isActive }) =>
+                isActive
+                  ? `font-poppinsSemibold !text-them !bg-transparent`
+                  : `font-poppinsSemibold !text-slate-800 !bg-transparent hover:!text-them`
+              }
             >
               Contact Us
             </NavLink>
