@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServicePageCard = ({
   subHeadingColor,
@@ -7,9 +8,11 @@ const ServicePageCard = ({
   heading,
   pera,
   className,
+  link,
 }) => {
   return (
-    <div
+    <Link
+      to={link}
       className={`flex items-center justify-center max-sm:flex-col ${
         className !== "" ? className : ""
       } `}
@@ -28,9 +31,8 @@ const ServicePageCard = ({
           }`}
         >
           <p className={`uppercase ${subHeadingColor}`}> {subheading} </p>
-          <h2 className="uppercase text-black font-poppinsSemibold text-2xl max-sm:text-center max-sm:text-xl">
-            {" "}
-            {heading}{" "}
+          <h2 className="uppercase text-black font-poppinsSemibold text-2xl max-sm:text-center max-sm:text-xl cursor-pointer after:transition-all relative after:content-[' '] after:absolute after:w-0 after:h-1 after:bg-[#FF9900] after:top-full after:left-0 hover:after:w-full ">
+            {heading}
           </h2>
         </div>
         <p
@@ -38,11 +40,10 @@ const ServicePageCard = ({
             !className ? "text-start " : " text-end "
           } `}
         >
-          {" "}
-          {pera}{" "}
+          {pera}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

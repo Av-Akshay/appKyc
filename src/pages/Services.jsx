@@ -26,6 +26,7 @@ const Services = () => {
         </div>
         <section className="flex flex-col gap-10">
           <ServicePageCard
+            link="/uiux"
             pic={uiux_service}
             subHeadingColor={"font-poppinsSemibold text-[#FF9900] "}
             heading="ui/ux design"
@@ -36,6 +37,7 @@ const Services = () => {
             className={""}
           />
           <ServicePageCard
+            link="/web"
             pic={web_service}
             subHeadingColor={"font-poppinsSemibold text-[#FF9900] "}
             heading="web development"
@@ -46,6 +48,7 @@ const Services = () => {
             className={"flex-row-reverse"}
           />
           <ServicePageCard
+            link="/app"
             pic={app_service}
             subHeadingColor={"font-poppinsSemibold text-[#FF9900] "}
             heading="app development"
