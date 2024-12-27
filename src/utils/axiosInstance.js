@@ -1,4 +1,5 @@
 import axios from "axios";
+import useToken from "../hooks/useToken";
 
 // Create an Axios instance
 const axiosInstance = axios.create({
@@ -13,7 +14,7 @@ const axiosInstance = axios.create({
 axiosInstance.interceptors.request.use(
   (config) => {
     // Modify request config before sending, like adding auth token
-    const token = localStorage.getItem("kycToken"); // Example token
+    const token = config.token || null; // Pass token via request config
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
