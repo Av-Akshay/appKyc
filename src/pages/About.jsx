@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import metaData from "../utils/constants";
 import { vision, owenship, ethic, think, brief_intro } from "../utils/icons";
 import { Heading, AboutPageCard, Meta } from "../components";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      offset: 200,
+      once: true, // Animation happens only once
+      mirror: false,
+    });
+  }, []);
   const { title, description, keywords } = metaData?.about;
   return (
     <React.Fragment>
@@ -24,6 +34,7 @@ const About = () => {
           {" "}
         </div>
         <div
+          data-aos="fade-up"
           className="bg-cover bg-no-repeat bg-center rounded-xl"
           style={{
             backgroundImage: `url(${brief_intro})`,
@@ -32,9 +43,9 @@ const About = () => {
           <div className="py-10 flex flex-col items-center gap-10 w-11/12 m-auto ">
             <Heading
               text="A brief introduction what we do"
-              className="capitalize text-3xl text-center tracking-wider !text-gray-700"
+              className="capitalize text-3xl text-center tracking-wider !text-gray-800"
             />
-            <p className="font-poppinsExtraLight text-lg tracking-wider text-gray-700">
+            <p className="font-poppinsSemibold text-xl tracking-wide leading-10 !text-black">
               <span className="text-them text-2xl font-poppinsBold">
                 {" "}
                 AppKyc{" "}
@@ -56,7 +67,7 @@ const About = () => {
       </section>
 
       {/*----------------------------------- why are we here section------------------------- */}
-      <section className=" w-11/12 m-auto ">
+      <section data-aos="fade-up" className=" w-11/12 m-auto ">
         <div className="py-10 flex flex-col items-center gap-10 w-11/12 m-auto ">
           <Heading
             text="Why are we here ? "
@@ -85,6 +96,7 @@ const About = () => {
       {/*----------------------------our vision section------------------------------------------------ */}
 
       <section
+        data-aos="fade-up"
         style={{ backgroundImage: `url(${vision})` }}
         className="w-11/12 m-auto bg-cover bg-no-repeat bg-center rounded-xl py-10 px-5 my-14 flex flex-col gap-3"
       >
@@ -92,14 +104,17 @@ const About = () => {
           text="Our Vision"
           className="!text-gray-700 max-sm:text-center"
         />
-        <p className="font-poppinsMedium text-lg text-gray-700 tracking-wider">
+        <p className="font-poppinsMedium text-xl leading-10 !text-black tracking-wider">
           We seek to create innovative yet profitable solutions for businesses
           that spell SUCCESS.
         </p>
       </section>
 
       {/* --------------------------why choose appkyc */}
-      <section className="bg-section-background mt-28 relative py-10 px-5">
+      <section
+        data-aos="fade-up"
+        className="bg-section-background mt-28 relative py-10 px-5"
+      >
         <div className=" absolute rotate-90 left-1/2 -top-14 -translate-x-1/2  w-[5%] border-dotted border-2 border-black">
           {" "}
         </div>
