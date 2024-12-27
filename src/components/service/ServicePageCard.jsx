@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ServicePageCard = ({
   subHeadingColor,
@@ -9,13 +11,24 @@ const ServicePageCard = ({
   pera,
   className,
   link,
+  props,
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      offset: 200,
+      once: true, // Animation happens only once
+      mirror: false,
+    });
+  }, []);
   return (
     <Link
+      data-aos="zoom-in"
       to={link}
       className={`flex items-center justify-center max-sm:flex-col ${
         className !== "" ? className : ""
       } `}
+      {...props}
     >
       <div className="w-1/2 max-sm:w-4/5 ">
         <img src={pic} alt={heading} />

@@ -24,7 +24,7 @@ const Services = () => {
             services to help businesses gain a competitive edge.
           </p>
         </div>
-        <section className="flex flex-col gap-10">
+        <section className="flex flex-col gap-10 ">
           <ServicePageCard
             link="/uiux"
             pic={uiux_service}
