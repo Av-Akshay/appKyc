@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { businessman } from "../utils/icons";
-import { Button, Heading, OfferingCard } from "../components";
-import { Link } from "react-router-dom";
+import { Heading, OfferingCard, JobCard } from "../components";
+import useCareer from "../hooks/useCareer";
 
 const Career = () => {
   const [apply, setApply] = useState(false);
+  const { jobs, loading, message } = useCareer();
   return (
     <React.Fragment>
       <section className="grid grid-cols-2 grid-rows-1 place-content-center my-16 max-sm:grid-cols-1 max-sm:grid-rows-career">
@@ -82,9 +84,12 @@ const Career = () => {
           </div>
         </div>
       </section>
-      <section className="px-10">
-        <div className="flex items-center justify-between max-md:flex-col max-md:gap-5">
-          <Heading text="Our Openings" className="my-10 max-md:text-2xl" />
+      <section className="w-4/5 max-[400px]:w-11/12 mx-auto">
+        <div className="flex items-center justify-between max-md:flex-col max-md:gap-2">
+          <Heading
+            text="Our Openings"
+            className="my-10 max-md:text-2xl max-md:my-3"
+          />
           <Link
             to={"/post-jobs"}
             className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
@@ -92,44 +97,11 @@ const Career = () => {
             Post Jobs
           </Link>
         </div>
-        <div className="w-11/12 m-auto flex flex-col gap-2">
-          <div className="mb-5">
-            <div className="w-full h-[2px] bg-gray-300"></div>
-            <div className="flex justify-between mt-5 max-md:flex-col-reverse max-md:gap-2">
-              <div className=" flex flex-col gap-2 w-3/5 max-md:w-11/12 ">
-                <Heading
-                  text="mobile application developer"
-                  className={"capitalize max-md:text-2xl"}
-                />
-                <p className="text-sm font-poppinsRegular">
-                  <span className="text-black font-poppinsSemibold">
-                    {" "}
-                    Job Description:-{" "}
-                  </span>
-                  {`We seek a highly skilled Mobile Application ${"(Android & Ios)"} Developer to join our
-                 dynamic development team`}
-                </p>
-              </div>
-              <p className="text-black font-poppinsSemibold capitalize max-sm:text-xs">
-                job location:-{" "}
-                <span className="px-5 py-1 border border-section-background rounded-full max-md:text-xs max-md:px-3 ">
-                  Dehradun
-                </span>
-              </p>
-            </div>
-            <div className="py-2 relative">
-              <p className="text-sm font-poppinsRegular">
-                Interested candidates are submit their resume at{" "}
-                <Link
-                  className="text-sm text-blue-500 border-b border-blue-500"
-                  to="#"
-                >
-                  poojakycworld@gmail.com
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
+        <div className="w-full flex flex-col gap-2">
+          {/* ---------------------- jobs listing ----------------- */}
+          {jobs?.map((item) => {
+            return <JobCard key={item._id} item={item} />;
+          })}
           <div className="w-full h-[2px] bg-gray-300"></div>
         </div>
       </section>
