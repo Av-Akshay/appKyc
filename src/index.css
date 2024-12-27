@@ -121,3 +121,28 @@
     opacity: 1;
   }
 }
+
+/* Custom styles for unordered list */
+.custom-ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.custom-li {
+  line-height: 1.2;
+}
+
+/* Custom styles for ordered list */
+.custom-ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.custom-ol li {
+  margin-bottom: 5px;
+}
+
+.custom-ul li,
+.custom-ol li {
+  color: #333;
+}

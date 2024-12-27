@@ -21,6 +21,9 @@ import AboutPageCard from "./about/AboutPageCard";
 //----------------------- blogs page-----------------------
 import BlogCard from "./blogs/BlogCard";
 
+//----------------------- career page-----------------------
+import JobCard from "./career/JobCard";
+
 export {
   Button,
   OfferingCard,
@@ -35,4 +38,5 @@ export {
   Heading,
   AboutPageCard,
   BlogCard,
+  JobCard,
 };

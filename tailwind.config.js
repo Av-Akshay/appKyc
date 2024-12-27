@@ -68,5 +68,7 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui", "tailwindcss-textshadow", "tailwind-clip-path")],
+  plugins: [
+    require("daisyui", "tailwindcss-textshadow", "tailwind-clip-path", "@tailwindcss/typography"),
+  ],
 };

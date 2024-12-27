@@ -106,7 +106,7 @@ function App() {
             }
           />
           <Route
-            path="/singleBlog"
+            path="/singleBlog/:id"
             element={
               <Suspense fallback={<Loader />}>
                 <SingleBlog />

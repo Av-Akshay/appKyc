@@ -37,8 +37,8 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-5 max-[450px]:items-center max-[450px]:gap-2">
             <h1 className="text-xl"> Contact Us:- </h1>
-            <span>Phone: +91-XXXXXXXXXX</span>
-            <span>Email: poojakycworld@gmail.com</span>
+            <span>Phone: +91 9015920156</span>
+            <span>Email: pooja.bandoria@appkyc.com</span>
           </div>
           <div className="flex flex-col gap-5 max-[450px]:items-center max-[450px]:gap-2">
             <h1 className="text-xl"> Quick Links:- </h1>
@@ -57,6 +57,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/career"> Career </Link>
+              </li>
+              <li>
+                <Link to="/blogs"> Blogs </Link>
               </li>
             </ul>
           </div>
