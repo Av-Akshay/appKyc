@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { heroSection, mouse } from "../../utils/icons";
 
 const HeroSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      offset: 200,
+      once: true, // Animation happens only once
+      mirror: false,
+    });
+  }, []);
   return (
     <div
       style={{
@@ -10,7 +21,10 @@ const HeroSection = () => {
       }}
       className="relative clip-path-polygon w-full flex items-center justify-center h-[90vh] p-10 bg-cover bg-no-repeat bg-center"
     >
-      <div className="flex items-center justify-center flex-col">
+      <div
+        data-aos="zoom-in"
+        className="flex items-center justify-center flex-col"
+      >
         <p className="font-poppinsBold text-white text-5xl max-md:text-3xl">
           Welcome To
         </p>

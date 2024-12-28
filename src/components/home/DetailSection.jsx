@@ -14,8 +14,9 @@ import {
 
 const DetailSection = () => {
   return (
-    <div className="w-full flex flex-col gap-5 py-10 bg-section-background">
+    <div className="w-full overflow-hidden flex flex-col gap-5 py-10 bg-section-background">
       <DetailCard
+        data={"slide-left"}
         number={first}
         text="We begin our journey by analyzing your business 
         objectives and end-user requirements to create 
@@ -24,6 +25,7 @@ const DetailSection = () => {
         className1="border-yellowColor -right-20 max-lg:right-0"
       />
       <DetailCard
+        data={"slide-right"}
         number={second}
         text="We design and draft the appearance, feel, and
         functionality of your product. "
@@ -32,6 +34,7 @@ const DetailSection = () => {
         className3="border-pinkColor -left-20 justify-end max-lg:left-0"
       />
       <DetailCard
+        data={"slide-left"}
         number={third}
         text="We use Agile methodology to collaborate and 
         iterate on the product design and development 
@@ -41,6 +44,7 @@ const DetailSection = () => {
         className1="border-blueColor -right-20 max-lg:right-0"
       />
       <DetailCard
+        data={"slide-right"}
         number={fourth}
         text="We provide maintenance and support if required. 
         We monitor the performance of your website/

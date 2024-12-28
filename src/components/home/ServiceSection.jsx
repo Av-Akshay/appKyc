@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { uiUx, webDevelopment, appDevelopment } from "../../utils/icons";
 import ServiceCard from "./ServiceCard";
 
 const ServiceSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      offset: 200,
+      once: true, // Animation happens only once
+      mirror: false,
+    });
+  }, []);
   return (
     <div className="pb-36 relative max-md:pb-10">
       <div className=" relative">
@@ -11,7 +21,10 @@ const ServiceSection = () => {
           {" "}
         </div>
         <div className="w-1/2 mx-auto flex items-center justify-center my-40 max-sm:my-28 ">
-          <h1 className=" text-balance font-semibold text-center text-3xl text-slate-950 max-sm:text-xl">
+          <h1
+            data-aos="zoom-in"
+            className=" text-balance font-semibold text-center text-3xl text-slate-950 max-sm:text-xl"
+          >
             {" "}
             We are one of the most effective Web & App Development Company{" "}
           </h1>

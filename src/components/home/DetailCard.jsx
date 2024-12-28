@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DetailCard = ({
   className1,
@@ -8,9 +10,19 @@ const DetailCard = ({
   detailType,
   text,
   pic,
+  data,
 }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration in milliseconds
+      offset: 200,
+      once: true, // Animation happens only once
+      mirror: false,
+    });
+  }, []);
   return (
     <div
+      data-aos={data}
       className={`flex items-center justify-between overflow-hidden relative max-lg:flex-col max-lg:px-5 ${
         className2 && className2
       } `}
