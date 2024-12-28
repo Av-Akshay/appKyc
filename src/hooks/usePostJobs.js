@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import useToken from "./useToken";
 import axiosInstance from "../utils/axiosInstance";
 
-const useJobs = () => {
+const usePostJobs = () => {
   const { token } = useToken();
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -70,4 +70,4 @@ const useJobs = () => {
   };
 };
 
-export default useJobs;
+export default usePostJobs;

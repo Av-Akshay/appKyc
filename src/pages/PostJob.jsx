@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Input from "../components/Input";
-import useJobs from "../hooks/usePostJobs";
+import usePostJobs from "../hooks/usePostJobs";
 import useToken from "../hooks/useToken";
 
 const PostJob = () => {
-  const { errors, handleSubmit, message, register, submitForm } = useJobs();
+  const { errors, handleSubmit, message, register, submitForm, loading } =
+    usePostJobs();
 
   const navigate = useNavigate();
   const { token } = useToken();
@@ -87,6 +88,7 @@ const PostJob = () => {
             )}
           </div>
           <button
+            disabled={loading ? true : false}
             type="submit"
             className="text-section-background font-poppinsSemibold py-1 capitalize text-lg w-full text-center bg-white"
           >
