@@ -1,4 +1,4 @@
-import logo from "/images/logo.svg";
+import logo from "/images/Final Logo.svg";
 import call from "/images/call.svg";
 import design from "/images/design.svg";
 import develop from "/images/develop.svg";
