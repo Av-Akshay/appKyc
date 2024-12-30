@@ -43,7 +43,7 @@ const ContactUs = () => {
           <ContactCard
             pic={icon_write_us}
             title={"write us"}
-            text="pooja.bandoria@appkyc.com"
+            text="pooja.bhandoria@appkyc.com"
             imgClass=" max-xl:!h-10 max-md:!h-6 "
             className={"max-lg:!gap-2 max-md:!gap-1 max-sm:py-5"}
           />
