@@ -5,10 +5,12 @@ import metaData from "../utils/constants";
 import { businessman } from "../utils/icons";
 import { Heading, OfferingCard, JobCard, Meta } from "../components";
 import useCareer from "../hooks/useCareer";
+import useToken from "../hooks/useToken";
 
 const Career = () => {
   const { description, keywords, title } = metaData.career;
   const { jobs, loading, message } = useCareer();
+  const { token } = useToken();
   return (
     <React.Fragment>
       <Meta title={title} description={description} keywords={keywords} />
@@ -92,12 +94,14 @@ const Career = () => {
             text="Our Openings"
             className="my-10 max-md:text-2xl max-md:my-3"
           />
-          <Link
-            to={"/post-jobs"}
-            className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
-          >
-            Post Jobs
-          </Link>
+          {token && (
+            <Link
+              to={"/post-jobs"}
+              className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
+            >
+              Post Jobs
+            </Link>
+          )}
         </div>
         <div className="w-full flex flex-col gap-2">
           {/* ---------------------- jobs listing ----------------- */}

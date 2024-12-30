@@ -25,7 +25,7 @@ const About = () => {
           className="uppercase relative after:contents-[' '] after:absolute after:h-1 after:w-1/2 after:-translate-x-1/2 after:-bottom-5 after:left-1/2 after:bg-gray-300 after:rounded-lg"
         />
         <p className="my-10 font-poppinsExtraLight leading-7 text-sm tracking-wide text-center">
-          AppKyc- Committed to Creating Successful Entrepreneurs and Brands!!!
+          App Kyc- Committed to Creating Successful Entrepreneurs and Brands!!!
         </p>
       </div>
       {/* -------------------brief introduction section------------------------------------ */}
@@ -48,7 +48,7 @@ const About = () => {
             <p className="font-poppinsSemibold text-xl tracking-wide leading-10 !text-black">
               <span className="text-them text-2xl font-poppinsBold">
                 {" "}
-                AppKyc{" "}
+                App Kyc{" "}
               </span>
               is a dynamic team specializing in the development of cutting-edge
               mobile apps and web applications. We focus on providing innovative
@@ -76,7 +76,7 @@ const About = () => {
         </div>
         <div className="flex items-center flex-col gap-5">
           <p className="text-base font-poppinsRegular tracking-wider text-center leading-7 ">
-            Founded in July 2022, AppKYC stands at the intersection of
+            Founded in July 2024, App Kyc stands at the intersection of
             innovation and digital transformation. Our passionate team of tech
             innovators, marketing strategists, and business growth experts has
             successfully guided many organizations - from ambitious startups to
@@ -119,7 +119,7 @@ const About = () => {
           {" "}
         </div>
         <Heading
-          text="Why choose AppKyc ?"
+          text="Why choose App Kyc ?"
           className="!text-white max-md:text-center"
         />
         <div className="grid grid-cols-3 grid-rows-1 mt-5 max-md:grid-cols-2 max-md:grid-rows-2 max-[550px]:grid-cols-1 max-[550px]:grid-rows-3 ">

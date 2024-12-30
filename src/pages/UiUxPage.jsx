@@ -66,7 +66,7 @@ const UiUxPage = () => {
       <section className=" py-20 my-14 bg-section-background flex flex-col gap-10 ">
         <div className="flex items-center justify-center">
           <Heading
-            text="How AppKyc Works"
+            text="How App Kyc Works"
             className="text-4xl !text-white relative after:contents-[' '] after:absolute after:w-1/2 after:h-1 after:bg-white after:-bottom-4 after:left-1/2 after:-translate-x-1/2 "
           />
         </div>

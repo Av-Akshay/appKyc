@@ -27,7 +27,7 @@ const ContactSection = () => {
           }
           pic={write}
           title="Write Us"
-          text="Email :- pooja.bandoria@appkyc.com"
+          text="Email :- pooja.bhandoria@appkyc.com"
         />
       </div>
     </div>

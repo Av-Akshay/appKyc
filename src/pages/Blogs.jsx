@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import { Heading, BlogCard, Meta } from "../components";
 import metaData from "../utils/constants";
 import useBlog from "../hooks/useBlog";
+import useToken from "../hooks/useToken";
 
 const Blogs = () => {
   const { description, keywords, title } = metaData.blogs;
   const { getMessage, blogs, loading } = useBlog();
+  const { token } = useToken();
   return (
     <>
       <Meta title={title} description={description} keywords={keywords} />
@@ -29,12 +31,14 @@ const Blogs = () => {
                   text=" Watch out our latest blogs "
                   className="capitalize !text-5xl"
                 />
-                <Link
-                  to="/post-blog"
-                  className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
-                >
-                  Post Blogs
-                </Link>
+                {token && (
+                  <Link
+                    to="/post-blog"
+                    className="px-5 py-2 bg-black text-xl text-white rounded-lg font-poppinsSemibold"
+                  >
+                    Post Blogs
+                  </Link>
+                )}
               </div>
               <section className="mt-16 flex flex-col gap-5">
                 {blogs?.map((items) => {

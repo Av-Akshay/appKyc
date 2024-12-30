@@ -43,13 +43,13 @@ const WebDevPage = () => {
         />
         <ul className="list-disc ml-10">
           <li className="text-xl font-poppinsExtraLight">
-            10 years of rendering excellent Web Development solutions.
+            Approx 1 years of rendering excellent Web Development solutions.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            1000 projects successfully delivered.
+            50 projects successfully delivered.
           </li>
           <li className="text-xl font-poppinsExtraLight">
-            200 websites management.
+            20 websites management.
           </li>
           <li className="text-xl font-poppinsExtraLight">
             Dedicated Project Manager.
@@ -59,7 +59,7 @@ const WebDevPage = () => {
       <section className=" py-20 my-14 bg-section-background flex flex-col gap-10 ">
         <div className="flex items-center justify-center">
           <Heading
-            text="How AppKyc Works"
+            text="How App Kyc Works"
             className="text-4xl !text-white relative after:contents-[' '] after:absolute after:w-1/2 after:h-1 after:bg-white after:-bottom-4 after:left-1/2 after:-translate-x-1/2 "
           />
         </div>
