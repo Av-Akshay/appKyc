@@ -77,8 +77,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl z-10">
-          <img className="w-full h-12" src={logo} alt="Logo" />
+        <Link className=" !border-none z-10">
+          <img className="w-full h-16" src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex mr-5">

@@ -19,6 +19,7 @@ const Blogs = lazy(() => import("./pages/Blogs.jsx"));
 const SingleBlog = lazy(() => import("./pages/SingleBlog.jsx"));
 const PostBlog = lazy(() => import("./pages/PostBlog.jsx"));
 const PostJob = lazy(() => import("./pages/PostJob.jsx"));
+const Privacy = lazy(() => import("./pages/Privacy.jsx"));
 
 function App() {
   return (
@@ -128,6 +129,14 @@ function App() {
               element={
                 <Suspense fallback={<Loader />}>
                   <PostJob />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/privacy"
+              element={
+                <Suspense fallback={<Loader />}>
+                  <Privacy />
                 </Suspense>
               }
             />
