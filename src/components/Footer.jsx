@@ -48,8 +48,10 @@ const Footer = () => {
           </div>
           <div className=" w-[25%] flex flex-col  gap-5  max-lg:w-full max-sm:w-full max-sm:items-center max-sm:gap-2">
             <h1 className="text-xl"> Contact Us:- </h1>
-            <span>Phone: +91 9015920156</span>
-            <span>Email: pooja.bhandoria@appkyc.com</span>
+            <div className="w-full flex flex-col gap-2 max-sm:gap-1 max-sm:items-center">
+              <span>Phone: +91 9015920156</span>
+              <span>Email: pooja.bhandoria@appkyc.com</span>
+            </div>
           </div>
           <div className="w-[25%] flex flex-col items-center gap-5  max-lg:w-full max-sm:w-full max-sm:items-center max-sm:gap-2">
             <h1 className="text-xl"> Quick Links:- </h1>
